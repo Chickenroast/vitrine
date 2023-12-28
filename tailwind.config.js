@@ -6,6 +6,9 @@ module.exports = {
       backgroundColor: {
         be5d77: "#BE5D77",
       },
+      fontFamily: {
+        CutoffPro: ["Cutoff Pro"],
+      },
     },
   },
   plugins: [],

@@ -10,3 +10,8 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
+@font-face {
+  font-family: "CutoffPro";
+  src: url("../public/CutoffPro.otf") format("opentype");
+}
