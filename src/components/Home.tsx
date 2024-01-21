@@ -1,9 +1,13 @@
 import React from "react";
 import ScrollDownCircle from "./ScrollDown";
+import Sphere from "./Sphere";
+
 const Home: React.FC = () => {
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center">
-      <div className="flex lg:p-10 h-[90%] lg:h-fit bg-white rounded-lg overflow-hidden">
+      <Sphere className="fixed w-[200%] flex self-end top-1 -right-20" />
+      <Sphere className="absolute flex self-end mt-[150%] z-40 " />
+      <section className="flex w-[105%] h-[80%] mt-[-35%] lg:p-10 h-[80%] lg:h-fit bg-white rounded-[60px] overflow-hidden z-30">
         <div className="p-5">
           <div className="flex">
             <div className="text-xs ml-auto flex space-x-5 mt-5 lg:text-lg">
@@ -12,6 +16,7 @@ const Home: React.FC = () => {
               <p>Contact</p>
             </div>
           </div>
+          <div className="bg-pink rounded-full"></div>
           <p className="text-left lg:mx-5 mt-[50%] lg:text-lg">
             Julia Michel T.
           </p>
@@ -24,7 +29,8 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <Sphere className="fixed w-[20%] flex self-start mt-[160%]" />
     </div>
   );
 };

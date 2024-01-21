@@ -12,3 +12,34 @@ body {
   font-family: "CutoffPro";
   src: url("../public/CutoffPro.otf") format("opentype");
 }
+
+/* Add this CSS to your stylesheets */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* @keyframes float2 {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+} */
+
+/* Apply the animation to the Sphere component */
+.Sphere {
+  animation: float 2s ease-in-out infinite;
+  /* Adjust the animation duration and easing function as needed */
+}
