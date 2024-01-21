@@ -10,8 +10,8 @@ const Home: React.FC = () => {
       <section className="flex w-[105%] h-[80%] mt-[-35%] lg:p-10 h-[80%] lg:h-fit bg-white rounded-[60px] overflow-hidden z-30">
         <div className="p-5">
           <div className="flex">
-            <div className="text-xs ml-auto flex space-x-5 mt-5 lg:text-lg">
-              <p>Projects</p>
+            <div className="text-xs ml-auto px-5 flex space-x-5 mt-5 lg:text-lg">
+              <p className="hover:text-bold">Projects</p>
               <p>About</p>
               <p>Contact</p>
             </div>
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             FRONT END DEVELOPPER
           </h1>
           <div className="mt-[50%] mb-5 flex items-center justify-center">
-            <div className="">
+            <div>
               <ScrollDownCircle />
             </div>
           </div>

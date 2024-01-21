@@ -43,3 +43,43 @@ body {
   animation: float 2s ease-in-out infinite;
   /* Adjust the animation duration and easing function as needed */
 }
+
+/* @keyframes rotateLetter {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.scroll-down {
+  animation: rotateLetter 1s infinite linear;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-down {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Set initial opacity to 0% when the page loads */
+.scroll-down div {
+  opacity: 0;
+}
