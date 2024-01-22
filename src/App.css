@@ -1,8 +1,11 @@
 #root {
   background-color: #be5d77;
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
 }
-/* 
-body {
+
+/* body {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -66,20 +69,29 @@ body {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .scroll-down {
   animation: fadeIn out 0.5s ease-out forwards;
 }
 
 /* Set initial opacity to 0% when the page loads */
 .scroll-down div {
+  opacity: 0;
+}
+
+.cursor {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fefefe;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 150ms ease;
+  transition-property: background-color, opacity, transform;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.cursor--hidden {
   opacity: 0;
 }
