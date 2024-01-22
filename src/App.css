@@ -76,7 +76,7 @@ body {
 }
 
 .scroll-down {
-  animation: fadeIn 0.5s ease-out forwards;
+  animation: fadeIn out 0.5s ease-out forwards;
 }
 
 /* Set initial opacity to 0% when the page loads */

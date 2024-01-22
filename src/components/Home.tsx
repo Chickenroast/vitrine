@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <div className="h-screen w-full flex flex-col items-center justify-center">
       <Sphere className="fixed w-[200%] flex self-end top-1 -right-20" />
       <Sphere className="absolute flex self-end mt-[150%] z-40 " />
-      <section className="flex w-[105%] h-[80%] mt-[-35%] lg:p-10 h-[80%] lg:h-fit bg-white rounded-[60px] overflow-hidden z-30">
+      <section className="flex w-[105%] h-[80%] mt-[-35%] lg:p-10 h-[80%] lg:h-fit bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl">
         <div className="p-5">
           <div className="flex">
             <div className="text-xs ml-auto px-5 flex space-x-5 mt-5 lg:text-lg">
