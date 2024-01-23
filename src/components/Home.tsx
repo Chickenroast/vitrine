@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           </p>
 
           <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
-            FRONT END DEVELOPPER
+            FRONT END DEVELOPER
           </h1>
           <div className="hidden lg:block">
             <CustomCursor />
