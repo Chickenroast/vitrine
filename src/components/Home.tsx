@@ -21,7 +21,7 @@ const Home: React.FC = () => {
       <section className="flex justify-center md:w-[70%] md:mt-5 w-[105%] h-[80%] mt-[-35%] md:p-5 h-[80%] md:h-fit bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
         {" "}
         <div className="p-5">
-          <div className="text-xs ml-auto px-5 flex space-x-5 mt-5 md:text-lg md:text-right self-end justify-end">
+          <div className="hover-text text-xs ml-auto px-5 flex space-x-5 mt-5 md:text-lg md:text-right self-end justify-end">
             <p className="hover:text-bold">Projects</p>
             <p>About</p>
             <p>Contact</p>
@@ -30,22 +30,24 @@ const Home: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <p className="text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
+          <p className="hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
             Julia Michel T.
           </p>
 
-          <h1 className="lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
+          <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
             FRONT END DEVELOPPER
           </h1>
           <CustomCursor />
-          <h1 className="text-sm text-white text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10">
-            REACT / NODEJS / TYPESCRIPT / JAVASCRIPT / HTML5 / CSS3
+
+          <h1 className="hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10">
+            REACT / NODEJS / TYPESCRIPT / JAVASCRIPT / HTML5 / CSS3 / SASS /
+            EXPRESS JS
           </h1>
-          <div className="md:mt-[20%] mt-[50%] mb-5 md:mb-[10%] flex items-center justify-center">
+          {/* <div className="md:mt-[20%] mt-[50%] mb-5 md:mb-[10%] flex items-center justify-center">
             <div>
               <ScrollDownCircle />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <Sphere className="fixed w-[20%] flex self-start mt-[160%] md:mt-[30%] md:ml-[5%]" />
