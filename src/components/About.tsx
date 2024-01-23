@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import ScrollDownCircle from "./ScrollDown";
+
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
+import Picture from "./Picture";
 import { motion, Variants, Transition } from "framer-motion";
+import SocialIcons from "./SocialIcon";
 
 const Home: React.FC = () => {
   const animationVariants = {
@@ -18,7 +20,7 @@ const Home: React.FC = () => {
 
   return (
     <div
-      className="h-screen w-full flex flex-col items-center justify-center z-10 "
+      className="h-screen w-full flex flex-col items-center justify-center z-10"
       style={{ userSelect: "none" }}
     >
       <Sphere className="fixed md:w-80 md:h-80 w-[200%] flex self-end top-1 -right-20 md:right-[75%] md:mt-[10vh]" />
@@ -41,17 +43,29 @@ const Home: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <p className="hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
+          <div className="z-50 md:mr-[20%] md:ml-[1%] flex items-end mt-2">
+            <div className="ml-auto">
+              <Picture className="md:w-[150%] md:h-[150%] hover-text" />
+            </div>
+          </div>
+          <p className="hover-text text-left md:mt-[-10%] lg:mt-[-15%] md:mx-5 md:mt-[20%] md:text-lg">
             Julia Michel T.
           </p>
-
           <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
-            FRONT END DEVELOPPER
+            ABOUT ME
           </h1>
           <div className="hidden lg:block">
             <CustomCursor />
           </div>
-          <div className="md:mr-[35%] md:mb-6">
+          <div className="md:mr-[20%] lg:mr-[10%]  md:mb-6">
+            <h2 className="hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10 text-justify mr-6">
+              I am a proficient web developer with a foundation in design. My
+              enthusiasm lies in continual learning, and I am adept at
+              seamlessly adapting to new challenges. Possessing strong
+              communication skills, I consistently approach tasks with a
+              positive demeanor. I am committed to inspiring and motivating my
+              team to excel in all projects.
+            </h2>
             <motion.div
               initial="hidden"
               animate="visible"
@@ -60,15 +74,12 @@ const Home: React.FC = () => {
               className="overflow-hidden hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10"
               style={{ width: "100%" }}
             >
-              REACT / NODEJS / TYPESCRIPT / JAVASCRIPT / HTML5 / CSS3 / SASS /
-              EXPRESS JS / TAILWINDCSS / BOOTSTRAP / FIGMA / MONGODB /
+              TRELLO / GITHUB
             </motion.div>
           </div>
-          {/* <div className="md:mt-[20%] mt-[50%] mb-5 md:mb-[10%] flex items-center justify-center">
-            <div>
-              <ScrollDownCircle />
-            </div>
-          </div> */}
+          <div className="md:mr-[10%]">
+            <SocialIcons />
+          </div>
         </div>
       </section>
       <Sphere className="fixed w-[20%] flex self-start mt-[160%] md:mt-[30%] md:ml-[5%]" />
