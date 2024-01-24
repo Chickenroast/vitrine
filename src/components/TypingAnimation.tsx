@@ -23,7 +23,7 @@ interface TypingAnimationProps {
 //   ];
 //   const colors = ["#fff"];
 
-const TypingAnimation: React.FC<TypingAnimationProps> = ({ words, colors }) => {
+const TypingAnimation: React.FC<TypingAnimationProps> = ({ words }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [letterCount, setLetterCount] = useState(0);
   const [visible, setVisible] = useState(true);

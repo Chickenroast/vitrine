@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
 import Picture from "./Picture";
-import { motion, Variants, Transition } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 import SocialIcons from "./SocialIcon";
 
 const Home: React.FC = () => {
@@ -48,7 +48,7 @@ const Home: React.FC = () => {
               <Picture className="md:w-[150%] md:h-[150%] hover-text" />
             </div>
           </div>
-          <p className="hover-text text-left md:mt-[-10%] lg:mt-[-15%] md:mx-5 md:mt-[20%] md:text-lg">
+          <p className="hover-text text-left md:mt-[-5%] lg:mt-[-15%] md:mx-5 md:mt-[20%] md:text-lg">
             Julia Michel T.
           </p>
           <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
@@ -58,7 +58,7 @@ const Home: React.FC = () => {
             <CustomCursor />
           </div>
           <div className="md:mr-[20%] lg:mr-[10%]  md:mb-6">
-            <h2 className="hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10 text-justify mr-6">
+            <h2 className="hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-1xl lg:text-2xl mt-5 relative z-10 text-justify mr-6">
               I am a proficient web developer with a foundation in design. My
               enthusiasm lies in continual learning, and I am adept at
               seamlessly adapting to new challenges. Possessing strong
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
               TRELLO / GITHUB
             </motion.div>
           </div>
-          <div className="md:mr-[10%]">
+          <div className="absolute md:mr-[10%] md:relative md:mb-5 ">
             <SocialIcons />
           </div>
         </div>

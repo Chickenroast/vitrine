@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import ScrollDownCircle from "./ScrollDown";
+import React from "react";
+
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
-import { motion, Variants, Transition } from "framer-motion";
+import { motion, Transition } from "framer-motion";
 
 const Home: React.FC = () => {
   const animationVariants = {

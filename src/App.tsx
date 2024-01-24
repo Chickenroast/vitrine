@@ -1,19 +1,20 @@
+// App.tsx
+
 import React from "react";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Navbar from "./components/Navbar";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
-}
+};
 
 export default App;

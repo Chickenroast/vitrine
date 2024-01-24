@@ -3,13 +3,19 @@
   width: 100%;
   margin: 0;
   max-width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-} */
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
 
 @font-face {
   font-family: "CutoffPro";
@@ -29,36 +35,10 @@
   }
 }
 
-/* @keyframes float2 {
-  0% {
-    transform: translateY(0px);
-  }
-  20% {
-    transform: translateY(-20px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-} */
-
-/* Apply the animation to the Sphere component */
 .Sphere {
   animation: float 2s ease-in-out infinite;
   /* Adjust the animation duration and easing function as needed */
 }
-
-/* @keyframes rotateLetter {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
-.scroll-down {
-  animation: rotateLetter 1s infinite linear;
-} */
 
 @keyframes fadeIn {
   from {
@@ -73,7 +53,6 @@
   animation: fadeIn out 0.5s ease-out forwards;
 }
 
-/* Set initial opacity to 0% when the page loads */
 .scroll-down div {
   opacity: 0;
 }
@@ -95,31 +74,3 @@
 .cursor--hidden {
   opacity: 0;
 }
-
-/* //ANIMATION FOR TYPING
-.console-container {
-  font-family: "Khula";
-  font-size: 4em;
-  text-align: center;
-  height: 200px;
-  width: 600px;
-  display: block;
-  position: absolute;
-  color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.console-underscore {
-  display: inline-block;
-  position: relative;
-  top: -0.14em;
-  left: 10px;
-}
-
-.hidden {
-  opacity: 0;
-} */
