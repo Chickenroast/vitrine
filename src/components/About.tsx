@@ -1,10 +1,9 @@
 import React from "react";
-
+import { motion, Transition } from "framer-motion";
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
 import Picture from "./Picture";
-import { motion, Transition } from "framer-motion";
 import SocialIcons from "./SocialIcon";
 
 const Home: React.FC = () => {
@@ -17,14 +16,13 @@ const Home: React.FC = () => {
     type: "tween",
     duration: 2, // Adjust the duration as needed
   };
-
   return (
     <div
       className="h-screen w-full flex flex-col items-center justify-center z-10"
       style={{ userSelect: "none" }}
     >
       <Sphere className="fixed md:w-80 md:h-80 w-[200%] flex self-end top-1 -right-20 md:right-[75%] md:mt-[10vh]" />
-      <Sphere className="absolute flex self-end mt-[150%] z-40 md:mt-[40vh] md:mr-[10%]" />
+      <Sphere className="absolute flex self-end mt-[150%] z-40 md:mt-[40vh] md:mr-[10%] md:w-30 md:h-30" />
       <div
         className="absolute w-4 h-4 bg-pink-500 rounded-full"
         style={{
@@ -35,7 +33,7 @@ const Home: React.FC = () => {
         }}
       />
 
-      <section className="flex justify-center md:w-[70%] md:mt-5 w-[105%] h-[80%] mt-[-35%] md:p-5 h-[80%] md:h-fit bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
+      <section className="flex justify-center md:w-[70%] md:mt-5 w-[105%] h-[80%] mt-[-35%] md:p-5 h-fit md:h-[80vh] bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
         {" "}
         <div className="p-5">
           <Navbar />
@@ -48,8 +46,8 @@ const Home: React.FC = () => {
               <Picture className="md:w-[150%] md:h-[150%] hover-text" />
             </div>
           </div>
-          <p className="hover-text text-left md:mt-[-5%] lg:mt-[-15%] md:mx-5 md:mt-[20%] md:text-lg">
-            Julia Michel T.
+          <p className="lg:text-2xl hover-text text-left md:mt-[-5%] lg:mt-[-20%] md:mx-5 md:mt-[20%] md:text-lg">
+            React front end developer
           </p>
           <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
             ABOUT ME
@@ -66,18 +64,21 @@ const Home: React.FC = () => {
               positive demeanor. I am committed to inspiring and motivating my
               team to excel in all projects.
             </h2>
+          </div>
+          <div className="md:mr-[35%] md:mb-6">
             <motion.div
               initial="hidden"
               animate="visible"
               variants={animationVariants}
               transition={transition}
-              className="overflow-hidden hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10"
+              className="overflow-hidden md:text-1xl hover-text text-sm text-pink text-left md:mx-5 md:mt-10 lg:text-1xl mt-5 relative z-10"
               style={{ width: "100%" }}
             >
-              TRELLO / GITHUB
+              REACT / TYPESCRIPT / JAVASCRIPT / NODEJS / HTML5 / CSS3 / SASS /
+              EXPRESS JS / TAILWINDCSS / BOOTSTRAP / MONGODB / FIGMA
             </motion.div>
           </div>
-          <div className="absolute md:mr-[10%] md:relative md:mb-5 ">
+          <div className="mb-5 md:mr-[10%] md:relative">
             <SocialIcons />
           </div>
         </div>

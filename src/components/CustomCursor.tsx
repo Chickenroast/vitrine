@@ -75,7 +75,7 @@ const CustomCursor: React.FC = () => {
           position: "fixed",
           pointerEvents: "none",
           zIndex: 1,
-          transition: "width 0.3s, height 0.3s", // Add transition for width and height
+          transition: "width 0.3s, height 0.3s",
         }}
       />
     </div>

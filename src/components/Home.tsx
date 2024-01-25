@@ -3,19 +3,8 @@ import React from "react";
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
-import { motion, Transition } from "framer-motion";
 
 const Home: React.FC = () => {
-  const animationVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
-
-  const transition: Transition = {
-    type: "tween",
-    duration: 2, // Adjust the duration as needed
-  };
-
   return (
     <div
       className="h-screen w-full flex flex-col items-center justify-center z-10 "
@@ -33,7 +22,7 @@ const Home: React.FC = () => {
         }}
       />
 
-      <section className="flex justify-center md:w-[70%] md:mt-5 w-[105%] h-[80%] mt-[-35%] md:p-5 h-[80%] md:h-fit bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
+      <section className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] h-[80%] mt-[-35%] md:p-5 h-[80%] md:h-fit bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
         {" "}
         <div className="p-5">
           <Navbar />
@@ -41,29 +30,22 @@ const Home: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <p className="hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
+          <p className="lg:text-2xl hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
             Julia Michel T.
           </p>
 
           <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">
             FRONT END DEVELOPER
           </h1>
+          <div className="md:mr-[20%] lg:mr-[10%]  md:mb-6">
+            <h2 className="hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-1xl lg:text-2xl mt-5 relative z-10 text-justify mr-6">
+              Based in Belgium
+            </h2>
+          </div>
           <div className="hidden lg:block">
             <CustomCursor />
           </div>
-          <div className="md:mr-[35%] md:mb-6">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={animationVariants}
-              transition={transition}
-              className="overflow-hidden hover-text text-sm text-pink text-left md:mx-5 md:mt-10 md:text-2xl mt-5 relative z-10"
-              style={{ width: "100%" }}
-            >
-              REACT / NODEJS / TYPESCRIPT / JAVASCRIPT / HTML5 / CSS3 / SASS /
-              EXPRESS JS / TAILWINDCSS / BOOTSTRAP / FIGMA / MONGODB /
-            </motion.div>
-          </div>
+
           {/* <div className="md:mt-[20%] mt-[50%] mb-5 md:mb-[10%] flex items-center justify-center">
             <div>
               <ScrollDownCircle />

@@ -6,7 +6,7 @@ import { faFilePdf as solidFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 const SocialIcons: React.FC = () => {
   return (
-    <div className="hover-text md:text-5xl text-xl lg:text-6xl ml-auto px-5 flex space-x-5 mt-5 md:text-lg md:text-right self-end justify-end">
+    <div className="hover-text md:text-5xl text-xl px-5 flex space-x-5 mt-5 md:text-lg md:text-left self-start justify-start">
       <a
         href="https://github.com/Chickenroast"
         target="_blank"
