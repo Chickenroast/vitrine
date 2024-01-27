@@ -38,9 +38,9 @@ const Services: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <div className="p-5 lg:flex lg:flex-row lg:mt-[10vh]">
-            <div className="lg:w-[50%]">
-              <p className=" lg:text-2xl hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
+          <div className="p-5 lg:flex lg:flex-row ">
+            <div className="lg:w-[50%] ">
+              <p className="lg:mt-[10%] lg:text-2xl hover-text text-left md:mx-5 mt-[50%] md:text-lg">
                 Services
               </p>
 
@@ -55,7 +55,7 @@ const Services: React.FC = () => {
             </div>
 
             <div className="lg:mt-[8%]">
-              <div className="md:mx-5 flex flex-row justify-between">
+              <div className="md:mx-5 flex flex-row justify-between lg:mt-[4%]">
                 <h2 className="lg:mb-5 hover-text mt-3 font-CutoffPro text-2xl lg:text-6xl font-bold">
                   Web Development
                 </h2>

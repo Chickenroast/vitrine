@@ -43,10 +43,10 @@ const Home: React.FC = () => {
           /> */}
           <div className="z-50 md:mr-[20%] md:ml-[1%] flex items-end mt-2">
             <div className="ml-auto">
-              <Picture className="md:w-[150%] md:h-[150%] hover-text lg:w-[200%] lg:h-[200%] lg:mt-[50px]" />
+              <Picture className="md:w-[150%] md:h-[150%] hover-text lg:mt-[50px]" />
             </div>
           </div>
-          <p className="lg:mt-[-100px] lg:text-2xl hover-text text-left md:mt-[-5%] lg:mt-[-20%] md:mx-5 md:mt-[20%] md:text-lg">
+          <p className=" lg:text-2xl hover-text text-left lg:mt-[-20%]  md:mx-5 md:mt-[20%] md:text-lg">
             React front end developer
           </p>
           <h1 className="hover-text lg:text-8xl text-4xl text-left md:mx-5 md:mt-10 md:text-7xl font-bold font-CutoffPro mt-5">

@@ -30,7 +30,7 @@ const Home: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <p className="lg:mt-[20vh] lg:text-2xl hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
+          <p className="lg:text-2xl hover-text text-left md:mx-5 mt-[50%] md:mt-[10%] md:text-lg">
             Julia Michel T.
           </p>
 
