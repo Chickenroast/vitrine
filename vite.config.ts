@@ -7,5 +7,13 @@ export default defineConfig({
   base: "/vitrine/",
   build: {
     outDir: "dist",
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"], // Combine React and React DOM into vendor chunk
+        },
+      },
+    },
   },
 });

@@ -30,7 +30,7 @@ const Services: React.FC = () => {
         }}
       />
 
-      <section className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] h-[80%] mt-[-35%] md:p-5 h-[80%] md:h-fit bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
+      <section className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] mt-[-35%] md:p-5 h-[80%] bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
         {" "}
         <div className="p-5">
           <Navbar />
@@ -38,9 +38,9 @@ const Services: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <div className="lg:flex lg:flex-row">
+          <div className="p-5 lg:flex lg:flex-row lg:mt-[10vh]">
             <div className="lg:w-[50%]">
-              <p className="lg:text-2xl hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
+              <p className=" lg:text-2xl hover-text text-left lg:mt-3 md:mx-5 mt-[50%] md:mt-[20%] md:text-lg">
                 Services
               </p>
 
