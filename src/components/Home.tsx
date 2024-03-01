@@ -3,6 +3,12 @@ import React from "react";
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+
+const transitionVariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: { opacity: 1, y: 0 },
+};
 
 const Home: React.FC = () => {
   return (
@@ -22,8 +28,13 @@ const Home: React.FC = () => {
         }}
       />
 
-      <section className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] mt-[-35%] md:p-5 h-[80%] bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
-        {" "}
+      <motion.div
+        className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] mt-[-35%] md:p-5 h-[80%] bg-white rounded-[60px] overflow-hidden z-30 relative"
+        initial="initial"
+        animate="animate"
+        variants={transitionVariants}
+        transition={{ duration: 1 }}
+      >
         <div className="p-5">
           <Navbar />
           {/* <MyCircle
@@ -52,7 +63,7 @@ const Home: React.FC = () => {
             </div>
           </div> */}
         </div>
-      </section>
+      </motion.div>
       <Sphere className="fixed w-[20%] flex self-start mt-[160%] md:mt-[30%] md:ml-[5%]" />
     </div>
   );

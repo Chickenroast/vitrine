@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import Sphere from "./Sphere";
 import CustomCursor from "./CustomCursor";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
 import { Collapse, Button } from "@material-tailwind/react";
+
+const transitionVariants = {
+  initial: { opacity: 0, y: 100 },
+  animate: { opacity: 1, y: 0 },
+};
 
 const Services: React.FC = () => {
   const [openSections, setOpenSections] = useState([false, false, false]);
@@ -29,8 +35,13 @@ const Services: React.FC = () => {
           zIndex: 1,
         }}
       />
-
-      <section className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] mt-[-35%] md:p-5 h-[80%] bg-white rounded-[60px] overflow-hidden z-30 shadow-2xl relative">
+      <motion.div
+        className="md:h-[80vh] flex justify-center md:w-[70%] md:mt-5 w-[105%] mt-[-35%] md:p-5 h-[80%] bg-white rounded-[60px] overflow-hidden z-30 relative"
+        initial="initial"
+        animate="animate"
+        variants={transitionVariants}
+        transition={{ duration: 1 }}
+      >
         {" "}
         <div className="p-5">
           <Navbar />
@@ -38,7 +49,7 @@ const Services: React.FC = () => {
             fill="#BE5D77"
             className="absolute md:w-1/5 md:h-1/5 md:ml-[35%] md:mt-[3%]"
           /> */}
-          <div className="p-5 lg:flex lg:flex-row ">
+          <div className="p-2 lg:flex lg:flex-row ">
             <div className="lg:w-[50%] ">
               <p className="lg:mt-[10%] lg:text-2xl hover-text text-left md:mx-5 mt-[50%] md:text-lg">
                 Services
@@ -62,7 +73,7 @@ const Services: React.FC = () => {
                 <Button
                   placeholder={""}
                   onClick={() => toggleOpen(0)}
-                  className="lg:mt-5 bg-pink p-1 rounded-full text-1xl flex items-center justify-center w-8 h-8"
+                  className="lg:mt-5 mt-3 bg-pink p-1 rounded-full text-1xl flex items-center justify-center w-8 h-8"
                 >
                   {openSections[0] ? "-" : "+"}
                 </Button>
@@ -80,7 +91,7 @@ const Services: React.FC = () => {
                 <Button
                   placeholder={""}
                   onClick={() => toggleOpen(1)}
-                  className="lg:mt-5 bg-pink p-1 rounded-full text-1xl flex items-center justify-center w-8 h-8"
+                  className="lg:mt-5 mt-3 bg-pink p-1 rounded-full text-1xl flex items-center justify-center w-8 h-8"
                 >
                   {openSections[1] ? "-" : "+"}
                 </Button>
@@ -88,7 +99,7 @@ const Services: React.FC = () => {
               <Collapse open={openSections[1]}>
                 <p className="lg:mb-5 lg:mt-2 md:mx-5 lg:text-2xl text-pink">
                   Optimise sites for Google search with images tags, keywords
-                  Planner, url keywords.
+                  Planner, url keywords, optimisation of the content.
                 </p>
               </Collapse>
               <div className="md:mx-5 flex flex-row justify-between">
@@ -98,7 +109,7 @@ const Services: React.FC = () => {
                 <Button
                   placeholder={""}
                   onClick={() => toggleOpen(2)}
-                  className="lg:mt-5 bg-pink p-1 rounded-full text-1xl flex items-center justify-center w-8 h-8"
+                  className="lg:mt-5 mt-3 bg-pink p-1 rounded-full text-1xl flex items-center justify-center w-8 h-8"
                 >
                   {openSections[2] ? "-" : "+"}
                 </Button>
@@ -121,7 +132,7 @@ const Services: React.FC = () => {
             </div>
           </div> */}
         </div>
-      </section>
+      </motion.div>
       <Sphere className="fixed w-[20%] flex self-start mt-[160%] md:mt-[30%] md:ml-[5%]" />
     </div>
   );
